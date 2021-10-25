@@ -20,8 +20,8 @@ const AddForm = (props) => {
     const handleSubmit = e => {
         e.preventDefault();
         if (state.name === "" || state.position === "" || state.nickname === "") {
-            props.errorMessage = "Name, position and nickname fields are required.";
-        } else {
+            props.errorMessage("Name, position and nickname fields are required.");
+        }else{
             props.addSmurfs(state)
         }
     }

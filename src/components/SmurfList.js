@@ -27,7 +27,7 @@ import Smurf from './Smurf';
 
 const mapStateToProps = state => {
     return {
-        smurfs: state,smurfs,
+        smurfs: state.smurfs,
         isLoading: state.isLoading
     }
 }
